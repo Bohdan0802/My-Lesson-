@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU="
+      crossorigin="anonymous"
+    />
+    <style>
+      header {
+        height: 40px;
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+      }
+      .navigation {
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+      }
+      .list {
+        margin-right: 16px;
+      }
+
+      .footer {
+        display: flex;
+        height: 40px;
+        background-color: green;
+      }
+      .footer_text {
+        margin: auto;
+      }
+      .page {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .container {
+        flex-grow: 1;
+        display: flex;
+      }
+      .dashbord {
+        flex-grow: 1;
+        background-color: pink;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .news {
+        display: flex;
+        width: 200px;
+        background-color: grey;
+        flex-direction: column;
+      }
+      .navigation_items {
+        padding: 0;
+      }
+      .news_list {
+        margin: 0;
+        margin-left: 16px;
+        height: 40px;
+        list-style-type: none;
+      }
+
+      .block_news {
+        margin: 16px auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <nav>
+          <ul class="navigation">
+            <li class="list">About</li>
+            <li class="list">Products</li>
+            <li class="list">Contacts</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="container">
+        <section class="dashbord">
+          <h2>I can use Flexbox!!!</h2>
+        </section>
+        <aside class="news">
+          <h2 class="block_news">News</h2>
+          <ul class="navigation_items">
+            <li class="news_list">News 1</li>
+            <li class="news_list">News 2</li>
+            <li class="news_list">News 3</li>
+          </ul>
+        </aside>
+      </main>
+      <footer class="footer"><span class="footer_text">Footer</span></footer>
+    </div>
+  </body>
+</html>
