@@ -1,0 +1,19 @@
+body {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+}
+.article {
+  margin: 16px;
+  background-color: bisque;
+  flex-basis: 300px;
+  flex-shrink: 1;
+}
+.header {
+  display: flex;
+  justify-content: center;
+}
+.articles-list {
+  display: flex;
+  flex-direction: column;
+}
