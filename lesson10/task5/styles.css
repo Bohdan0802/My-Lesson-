@@ -6,6 +6,7 @@ body {
 }
 .article {
   margin: 8px;
+  padding: 16px;
   background-color: bisque;
   flex-basis: 300px;
   flex-shrink: 0;
@@ -18,10 +19,4 @@ body {
 .articles-list {
   display: flex;
   flex-wrap: wrap;
-}
-h2 {
-  margin: 16px;
-}
-p {
-  margin: 16px;
 }
