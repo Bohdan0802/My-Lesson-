@@ -14,8 +14,6 @@
 
 .menu-list {
   position: absolute;
-  top: 67px;
-  left: 16px;
   display: none;
   color: black;
   list-style-type: none;
