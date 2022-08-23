@@ -13,13 +13,21 @@
       .gallery {
         display: flex;
       }
-      .gallery > .image {
-        border: 1px dotted grey;
-      }
+
       .image {
         margin: 16px;
         height: 200px;
         width: 200px;
+        border: 1px dotted grey;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      .image1 {
+        margin: 16px;
+        height: 198px;
+        width: 198px;
+        border: 1px dotted grey;
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -29,7 +37,7 @@
   <body>
     <div class="gallery">
       <div
-        class="image"
+        class="image1"
         style="
           background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson+13/hw1/nature1.jpeg);
         "
