@@ -34,13 +34,13 @@
         <input type="checkbox" name="agree" uncheckeds />
       </div>
       <div class="form-control">
-        <input type="checkbox" name="like" checked disabled />
+        <input type="checkbox" name="like" checked readonly />
       </div>
       <div class="form-control">
         <input type="color" name="favouriteColor" value="#ff7f50" />
       </div>
       <div class="form-control">
-        <input type="date" name="birthDate" id="birthDate" value="2021-02-01" />
+        <input type="date" name="birthDate" id="birthDate" value="2021-01-02" />
       </div>
       <div class="form-control">
         <input
@@ -78,20 +78,25 @@
           type="textarea"
           name="story"
           id="story"
-          height="5"
           maxlength="30"
           placeholder="A long time ago..."
         />
       </div>
       <div class="form-control">
-        <input type="password" id="password" name="password" secret />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value="123456"
+          secret
+        />
       </div>
       <div class="form-control">
         <label class="languages">
           <input type="radio" id="option-html" name="language" />
           <label for="option-html">HTML</label>
 
-          <input type="radio" id="option-css" name="gender" />
+          <input type="radio" id="option-css" name="gender" checked />
           <label for="option-css">CSS</label>
 
           <input type="radio" id="option-javascript" name="gender" />
