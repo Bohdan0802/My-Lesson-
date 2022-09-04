@@ -28,7 +28,7 @@
   <body>
     <form class="form-task">
       <div class="form-control">
-        <input type="text" name="primaryLaguage" value="HTML" disabled />
+        <input type="text" name="primaryLaguage" value="HTML" readonly />
       </div>
       <div class="form-control">
         <input type="checkbox" name="agree" uncheckeds />
@@ -91,24 +91,17 @@
         />
       </div>
       <div class="form-control">
-        <label class="languages">
-          <input type="radio" id="option-html" name="language" />
-          <label for="option-html">HTML</label>
+        <input type="radio" id="option-html" name="language" />
+        <label for="option-html">HTML</label>
 
-          <input type="radio" id="option-css" name="gender" checked />
-          <label for="option-css">CSS</label>
+        <input type="radio" id="option-css" name="gender" checked />
+        <label for="option-css">CSS</label>
 
-          <input type="radio" id="option-javascript" name="gender" />
-          <label for="option-javascript">JavaScript</label>
-        </label>
+        <input type="radio" id="option-javascript" name="gender" />
+        <label for="option-javascript">JavaScript</label>
       </div>
       <div class="form-control">
-        <input
-          type="range"
-          name="learninProgress"
-          id="learninProgress"
-          value="30"
-        />
+        <input type="range" name="learninProgress" value="30" />
       </div>
       <div class="form-control">
         <select name="framework" id="framework">
@@ -121,7 +114,6 @@
         <input
           type="search"
           name="search"
-          id="search"
           placeholder="Type first letters..."
         />
       </div>
