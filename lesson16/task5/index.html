@@ -11,8 +11,10 @@
       crossorigin="anonymous"
     />
     <style>
-      .form-task {
+      * {
         box-sizing: border-box;
+      }
+      .form-task {
         margin: 32px;
       }
       .form-control {
@@ -20,6 +22,9 @@
       }
       .submit-button {
         margin-left: 8px;
+      }
+      .languages {
+        margin: 8px;
       }
     </style>
   </head>
@@ -94,15 +99,13 @@
           secret
         />
       </div>
-      <div class="form-control">
-        <label class="languages" id="options">
-          <input type="radio" name="language" id="option-html" />
-          <label for="option-html">HTML</label>
-          <input type="radio" name="gender" id="option-css" checked />
-          <label for="option-css">CSS</label>
-          <input type="radio" name="gender" id="option-javascript" />
-          <label for="option-javascript">JavaScript</label>
-        </label>
+      <div class="languages">
+        <input type="radio" name="language" id="option-html" />
+        <label for="option-html">HTML</label>
+        <input type="radio" name="gender" id="option-css" checked />
+        <label for="option-css">CSS</label>
+        <input type="radio" name="gender" id="option-javascript" />
+        <label for="option-javascript">JavaScript</label>
       </div>
       <div class="form-control">
         <input
@@ -115,7 +118,7 @@
       <div class="form-control">
         <select name="framework" id="framework">
           <option value="react">React</option>
-          <option value="jquery" selected="selected">jQuery</option>
+          <option value="jquery" selected>jQuery</option>
           <option value="javascript">JavaScript</option>
         </select>
       </div>
