@@ -26,9 +26,6 @@
       .languages {
         margin: 8px;
       }
-      .framework-languages {
-        margin-left: 8px;
-      }
     </style>
   </head>
   <body>
@@ -118,13 +115,13 @@
           value="30"
         />
       </div>
-
-      <select class="framework-languages" name="framework" id="framework">
-        <option value="react">React</option>
-        <option value="jquery" selected>jQuery</option>
-        <option value="javascript">JavaScript</option>
-      </select>
-
+      <div class="form-control">
+        <select name="framework" id="framework">
+          <option value="react">React</option>
+          <option value="jquery" selected>jQuery</option>
+          <option value="bootstrap">Bootstrap</option>
+        </select>
+      </div>
       <div class="form-control">
         <input
           type="search"
