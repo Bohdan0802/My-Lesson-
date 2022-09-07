@@ -11,9 +11,11 @@
       crossorigin="anonymous"
     />
     <style>
+      * {
+        box-sizing: border-box;
+      }
       table {
         margin: 16px;
-        box-sizing: border-box;
         width: 500px;
       }
       table,
@@ -27,52 +29,47 @@
         padding: 4px;
         text-align: right;
       }
-      div {
-        overflow-x: auto;
-      }
     </style>
   </head>
   <body>
-    <div>
-      <table>
-        <caption>
-          Shopping List
-        </caption>
-        <tbody>
-          <thead>
-            <tr>
-              <th>Product</th>
-              <th>Amount</th>
-              <th>Price</th>
-              <th>Subtotal</th>
-            </tr>
-          </thead>
+    <table>
+      <caption>
+        Shopping List
+      </caption>
+      <tbody>
+        <thead>
           <tr>
-            <td>Milk</td>
-            <td>3</td>
-            <td>$2</td>
-            <td>$6</td>
+            <th>Product</th>
+            <th>Amount</th>
+            <th>Price</th>
+            <th>Subtotal</th>
           </tr>
-          <tr>
-            <td>Bread</td>
-            <td>4</td>
-            <td>$1</td>
-            <td>$4</td>
-          </tr>
-          <tr>
-            <td>Meat</td>
-            <td>5</td>
-            <td>$10</td>
-            <td>$50</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td colspan="3">Total</td>
-            <td>$60</td>
-          </tr>
-        </tfoot>
-      </table>
-    </div>
+        </thead>
+        <tr>
+          <td>Milk</td>
+          <td>3</td>
+          <td>$2</td>
+          <td>$6</td>
+        </tr>
+        <tr>
+          <td>Bread</td>
+          <td>4</td>
+          <td>$1</td>
+          <td>$4</td>
+        </tr>
+        <tr>
+          <td>Meat</td>
+          <td>5</td>
+          <td>$10</td>
+          <td>$50</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total</td>
+          <td>$60</td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
