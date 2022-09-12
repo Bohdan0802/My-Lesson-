@@ -2,41 +2,56 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Text aligning</title>
+    <title>TASK2</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
       integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
     <style>
-      header {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-
-      h1 {
-        font-size: 74px;
-        text-align: center;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        width: 50%;
-      }
-      div {
-        height: 200px;
-        background-color: coral;
-        color: white;
-        text-align: center;
-        line-height: 200px;
-        text-transform: uppercase;
-      }
+        .custom-button{
+            margin: 64px;
+            width: 200px;
+            height: 50px;
+            background-color: coral;
+            color: white;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 700;  
+             text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            line-height: 50px;
+         
+        } 
+        .custom-button:hover  {
+            color: darkcyan;
+        }
+        
+        .bird-icon {
+            height: 32px;
+            width: 32px;
+            vertical-align: middle;
+        }
+       
+        .custom-button:hover > .bird-icon{
+            color: green;
+        }
+       
     </style>
-  </head>
-
-  <body>
-    <header>
-      <h1>Some very long header. Really to long for this page</h1>
-    </header>
-    <div>Center is here</div>
-  </body>
+<body>
+    <button class="custom-button">
+        <img class="bird-icon" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson18/task2/bird.svg" alt="SVG-image">
+        Catch the bird
+        
+    </button>
+    <button class="custom-button">
+        <i class="fa-solid fa-id-card"></i>
+        Create account
+    </button>
+    
+</body>
 </html>
