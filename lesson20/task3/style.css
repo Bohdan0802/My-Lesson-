@@ -1,0 +1,53 @@
+.container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.spinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+.spinner-text {
+  font-size: 16px;
+  font-family: monospace;
+  text-transform: uppercase;
+  animation: blinking 2s infinite linear;
+}
+.circle {
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 4px solid lightgrey;
+  margin-bottom: 8px;
+  animation: border-circle 2s linear;
+}
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes border-circle {
+  0% {
+    transform: rotate(90deg);
+    border: 4px solid black;
+  }
+  25% {
+    transform: rotate(180deg);
+    border: 4px solid black;
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
