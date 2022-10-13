@@ -96,10 +96,7 @@ img {
 @media screen and (min-width: 600px) and (max-width: 1200px) {
   .main {
     display: flex;
-    flex-direction: column;
-  }
-  .navigation {
-    width: 20%;
+    flex-wrap: wrap;
   }
   .section {
     width: 80%;
