@@ -93,3 +93,18 @@ img {
     width: 100%;
   }
 }
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation {
+    width: 20%;
+  }
+  .section {
+    width: 80%;
+  }
+  .news {
+    width: 100%;
+  }
+}
