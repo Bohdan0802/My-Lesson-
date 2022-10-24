@@ -10,7 +10,6 @@ body {
 }
 
 .square {
-  display: table-caption;
   width: 100px;
   height: 100px;
   margin: 8px;
