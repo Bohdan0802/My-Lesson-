@@ -12,6 +12,12 @@ body {
 }
 .container {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include for-element-sc {
+    flex-direction: column;
+  }
 }
 
 .square {
@@ -20,9 +26,6 @@ body {
   margin: $unit;
   background-color: #ff7f50;
 
-  @include for-element-sc {
-    display: inline-block;
-  }
   @include for-small {
     background-color: #8a2be2;
   }
