@@ -8,8 +8,8 @@ $lg-1: 1199px;
 
 $unit: 8px;
 
-@mixin for-screen {
-  @media screen and (min-width: $sm) and (orientation: portrait) {
+@mixin for-elemnt-sc {
+  @media screen and (min-width: $sm) {
     @content;
   }
 }

@@ -11,13 +11,13 @@ body {
 }
 
 .square {
+  display: table-caption;
   width: 100px;
   height: 100px;
-  display: table-caption;
   margin: $unit;
   background-color: #ff7f50;
 
-  @include for-screen {
+  @include for-elemnt-sc {
     display: inline-block;
   }
   @include for-small {
