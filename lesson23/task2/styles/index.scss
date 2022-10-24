@@ -1,9 +1,7 @@
 @import 'breakepoints.scss';
 
-* {
-  box-sizing: border-box;
-}
 body {
+  box-sizing: border-box;
   height: 100vh;
   display: flex;
   align-items: center;
